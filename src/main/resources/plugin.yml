@@ -1,0 +1,8 @@
+name: MoreScenarios
+version: 1.0
+main: net.ducruetl.MoreScenarios.MoreScenarios
+author: Léo Ducruet
+
+commands:
+  scenario:
+    usage: /scenario <enable|disable|list> <name>

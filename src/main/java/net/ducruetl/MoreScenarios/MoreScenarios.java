@@ -5,11 +5,21 @@ import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import net.ducruetl.MoreScenarios.scenarios.BowSwap;
+import net.ducruetl.MoreScenarios.scenarios.CutClean;
+
 public class MoreScenarios extends JavaPlugin {
+
+    private ScenarioManager scenarioManager;
     
     @Override
     public void onEnable() {
-        super.onEnable();
+        scenarioManager = new ScenarioManager();
+
+        scenarioManager.register(new CutClean());
+        scenarioManager.register(new BowSwap());
+
+        getCommand("scenario").setExecutor(new CommandListener(scenarioManager, this));
 
         Bukkit.getLogger().log(Level.INFO, "Started " + getName());
     }
