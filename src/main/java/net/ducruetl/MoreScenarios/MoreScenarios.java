@@ -7,6 +7,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import net.ducruetl.MoreScenarios.scenarios.BowSwap;
 import net.ducruetl.MoreScenarios.scenarios.CutClean;
+import net.ducruetl.MoreScenarios.scenarios.HasteyBabies;
+import net.ducruetl.MoreScenarios.scenarios.HasteyBoys;
 
 public class MoreScenarios extends JavaPlugin {
 
@@ -18,6 +20,8 @@ public class MoreScenarios extends JavaPlugin {
 
         scenarioManager.register(new CutClean());
         scenarioManager.register(new BowSwap());
+        scenarioManager.register(new HasteyBoys());
+        scenarioManager.register(new HasteyBabies());
 
         getCommand("scenario").setExecutor(new CommandListener(scenarioManager, this));
 

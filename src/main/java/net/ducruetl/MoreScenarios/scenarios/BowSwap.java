@@ -1,5 +1,7 @@
 package net.ducruetl.MoreScenarios.scenarios;
 
+import java.util.ArrayList;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Arrow;
@@ -21,16 +23,22 @@ public class BowSwap implements Scenario, Listener {
     }
 
     @Override
-    public void enable(JavaPlugin plugin) {
-        enabled = true;
+    public ArrayList<String> getIncompatibleScenarios() {
+        return new ArrayList<>();
+    }
 
+    @Override
+    public void enable(JavaPlugin plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
+
+        enabled = true;
     }
 
     @Override
     public void disable() {
-        enabled = false;
         HandlerList.unregisterAll(this);
+
+        enabled = false;
     }
 
     @Override
@@ -40,14 +48,18 @@ public class BowSwap implements Scenario, Listener {
 
     @EventHandler
     public void onArrowTouched(EntityDamageByEntityEvent event) {
-        if (event.getEntity() instanceof Player player 
-        && event.getDamager() instanceof Arrow arrow
-        && arrow.getShooter() instanceof Player otherPlayer) {
-            Location pos1 = player.getLocation();
-            Location pos2 = otherPlayer.getLocation();
+        if (event.getEntity() instanceof Player 
+        && event.getDamager() instanceof Arrow) {
+            Player player = (Player) event.getEntity();
+            Arrow arrow = (Arrow) event.getDamager();
+            if (arrow.getShooter() instanceof Player) {
+                Player otherPlayer = (Player) arrow.getShooter();
+                Location pos1 = player.getLocation();
+                Location pos2 = otherPlayer.getLocation();
 
-            player.teleport(pos2);
-            otherPlayer.teleport(pos1);
+                player.teleport(pos2);
+                otherPlayer.teleport(pos1);
+            }
         }
     }
     

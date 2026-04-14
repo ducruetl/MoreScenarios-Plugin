@@ -6,8 +6,8 @@ version = '1.0-SNAPSHOT'
 
 description = """MoreScenarios"""
 
-sourceCompatibility = 21
-targetCompatibility = 21
+sourceCompatibility = 8
+targetCompatibility = 8
 tasks.withType(JavaCompile) {
 	options.encoding = 'UTF-8'
 }

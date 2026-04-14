@@ -1,5 +1,7 @@
 package net.ducruetl.MoreScenarios.scenarios;
 
+import java.util.ArrayList;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
@@ -20,16 +22,22 @@ public class CutClean implements Scenario, Listener {
     }
 
     @Override
-    public void enable(JavaPlugin plugin) {
-        enabled = true;
+    public ArrayList<String> getIncompatibleScenarios() {
+        return new ArrayList<>();
+    }
 
+    @Override
+    public void enable(JavaPlugin plugin) {
         Bukkit.getPluginManager().registerEvents(this, plugin);
+
+        enabled = true;
     }
 
     @Override
     public void disable() {
-        enabled = false;
         HandlerList.unregisterAll(this);
+
+        enabled = false;
     }
 
     @Override

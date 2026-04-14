@@ -1,5 +1,7 @@
 package net.ducruetl.MoreScenarios;
 
+import java.util.ArrayList;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public interface Scenario {
@@ -10,4 +12,6 @@ public interface Scenario {
     void disable();
 
     boolean isEnabled();
+
+    ArrayList<String> getIncompatibleScenarios();
 }

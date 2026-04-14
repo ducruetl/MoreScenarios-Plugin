@@ -25,7 +25,7 @@ public class CommandListener implements CommandExecutor {
 
         switch (sub) {
 
-            case "enable" -> {
+            case "enable": 
                 if (args.length != 2) return false;
 
                 Scenario scenario = manager.get(args[1]);
@@ -35,35 +35,32 @@ public class CommandListener implements CommandExecutor {
                     return true;
                 }
 
-                scenario.enable(plugin);
-                sender.sendMessage("Enabled: " + scenario.getName());
-            }
+                manager.enable(scenario.getName(), plugin, sender);
+                break;
 
-            case "disable" -> {
+            case "disable": 
                 if (args.length != 2) return false;
 
-                Scenario scenario = manager.get(args[1]);
+                scenario = manager.get(args[1]);
 
                 if (scenario == null) {
                     sender.sendMessage("Unknown scenario.");
                     return true;
                 }
 
-                scenario.disable();
-                sender.sendMessage("Disabled: " + scenario.getName());
-            }
+                manager.disable(scenario.getName(), sender);
+                break;
 
-            case "list" -> {
+            case "list": 
                 sender.sendMessage("Scenarios:");
 
                 for (Scenario s : manager.getAll()) {
                     sender.sendMessage("- " + s.getName() + (s.isEnabled() ? " (on)" : " (off)"));
                 }
-            }
+                break;
 
-            default -> {
+            default: 
                 return false;
-            }
         }
 
         return true;
