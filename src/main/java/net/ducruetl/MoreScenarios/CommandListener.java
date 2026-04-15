@@ -28,7 +28,7 @@ public class CommandListener implements CommandExecutor {
             case "enable": 
                 if (args.length != 2) return false;
 
-                Scenario scenario = manager.get(args[1]);
+                Scenario scenario = manager.get(args[1].toLowerCase());
 
                 if (scenario == null) {
                     sender.sendMessage("Unknown scenario.");
