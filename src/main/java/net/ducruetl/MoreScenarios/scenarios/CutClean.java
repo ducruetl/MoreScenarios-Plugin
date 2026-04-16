@@ -62,6 +62,8 @@ public class CutClean implements Scenario, Listener {
                     event.getBlock().getLocation(),
                     new ItemStack(Material.IRON_INGOT)
             );
+
+            event.setExpToDrop(3);
         }
 
         if (type == Material.GOLD_ORE) {
@@ -74,6 +76,8 @@ public class CutClean implements Scenario, Listener {
                     event.getBlock().getLocation(),
                     new ItemStack(Material.GOLD_INGOT)
             );
+
+            event.setExpToDrop(3);
         }
     }
 }

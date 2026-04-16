@@ -9,6 +9,7 @@ import net.ducruetl.MoreScenarios.scenarios.BowSwap;
 import net.ducruetl.MoreScenarios.scenarios.CutClean;
 import net.ducruetl.MoreScenarios.scenarios.HasteyBabies;
 import net.ducruetl.MoreScenarios.scenarios.HasteyBoys;
+import net.ducruetl.MoreScenarios.scenarios.HealthAboveHead;
 
 public class MoreScenarios extends JavaPlugin {
 
@@ -22,6 +23,7 @@ public class MoreScenarios extends JavaPlugin {
         scenarioManager.register(new BowSwap());
         scenarioManager.register(new HasteyBoys());
         scenarioManager.register(new HasteyBabies());
+        scenarioManager.register(new HealthAboveHead());
 
         getCommand("scenario").setExecutor(new CommandListener(scenarioManager, this));
 
