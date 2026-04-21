@@ -1,6 +1,7 @@
 package net.ducruetl.MoreScenarios.scenarios;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -52,6 +53,8 @@ public class CutClean implements Scenario, Listener {
 
         Material type = event.getBlock().getType();
 
+        Random random = new Random();
+
         if (type == Material.IRON_ORE) {
 
             event.setCancelled(true);
@@ -63,7 +66,8 @@ public class CutClean implements Scenario, Listener {
                     new ItemStack(Material.IRON_INGOT)
             );
 
-            event.setExpToDrop(3);
+            // Exp range is [2;4]
+            event.setExpToDrop(random.nextInt(3) + 2);
         }
 
         if (type == Material.GOLD_ORE) {
@@ -77,7 +81,8 @@ public class CutClean implements Scenario, Listener {
                     new ItemStack(Material.GOLD_INGOT)
             );
 
-            event.setExpToDrop(3);
+            // Exp range is [2;4]
+            event.setExpToDrop(random.nextInt(3) + 2);
         }
     }
 }
