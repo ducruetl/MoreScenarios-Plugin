@@ -12,8 +12,6 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.UHCAndScenarios.Scenario;
-
 public class HasteyBabies implements Scenario {
     private boolean enabled = false;
 

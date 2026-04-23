@@ -1,4 +1,4 @@
-package net.ducruetl.UHCAndScenarios;
+package net.ducruetl.UHCAndScenarios.scenarios;
 
 import java.util.ArrayList;
 

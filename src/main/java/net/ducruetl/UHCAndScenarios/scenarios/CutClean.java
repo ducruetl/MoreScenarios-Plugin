@@ -12,8 +12,6 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.UHCAndScenarios.Scenario;
-
 public class CutClean implements Scenario, Listener {
     private boolean enabled = false;
 

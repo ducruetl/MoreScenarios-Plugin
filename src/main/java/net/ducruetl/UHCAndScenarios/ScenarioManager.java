@@ -8,6 +8,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import net.ducruetl.UHCAndScenarios.scenarios.Scenario;
+
 public class ScenarioManager {
 
     private final Map<String, Scenario> scenarios = new HashMap<>();

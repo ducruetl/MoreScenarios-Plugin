@@ -12,8 +12,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.UHCAndScenarios.Scenario;
-
 public class BowSwap implements Scenario, Listener {
     private boolean enabled = false;
 

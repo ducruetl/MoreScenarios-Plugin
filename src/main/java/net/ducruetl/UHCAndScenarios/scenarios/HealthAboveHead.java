@@ -19,8 +19,6 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.ScoreboardManager;
 
-import net.ducruetl.UHCAndScenarios.Scenario;
-
 public class HealthAboveHead implements Scenario, Listener {
     private JavaPlugin plugin;
 
