@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios.scenarios;
+package net.ducruetl.UHCAndScenarios.scenarios;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.MoreScenarios.Scenario;
+import net.ducruetl.UHCAndScenarios.Scenario;
 
 public class BowSwap implements Scenario, Listener {
     private boolean enabled = false;

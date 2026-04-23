@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios;
+package net.ducruetl.UHCAndScenarios;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

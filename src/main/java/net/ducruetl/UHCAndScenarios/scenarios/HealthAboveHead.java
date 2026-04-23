@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios.scenarios;
+package net.ducruetl.UHCAndScenarios.scenarios;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.ScoreboardManager;
 
-import net.ducruetl.MoreScenarios.Scenario;
+import net.ducruetl.UHCAndScenarios.Scenario;
 
 public class HealthAboveHead implements Scenario, Listener {
     private JavaPlugin plugin;

@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios;
+package net.ducruetl.UHCAndScenarios;
 
 import java.util.Collection;
 import java.util.HashMap;

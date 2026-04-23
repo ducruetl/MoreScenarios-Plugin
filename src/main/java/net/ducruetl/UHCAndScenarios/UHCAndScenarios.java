@@ -1,15 +1,15 @@
-package net.ducruetl.MoreScenarios;
+package net.ducruetl.UHCAndScenarios;
 
 import java.util.logging.Level;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.MoreScenarios.scenarios.BowSwap;
-import net.ducruetl.MoreScenarios.scenarios.CutClean;
-import net.ducruetl.MoreScenarios.scenarios.HasteyBabies;
-import net.ducruetl.MoreScenarios.scenarios.HasteyBoys;
-import net.ducruetl.MoreScenarios.scenarios.HealthAboveHead;
+import net.ducruetl.UHCAndScenarios.scenarios.BowSwap;
+import net.ducruetl.UHCAndScenarios.scenarios.CutClean;
+import net.ducruetl.UHCAndScenarios.scenarios.HasteyBabies;
+import net.ducruetl.UHCAndScenarios.scenarios.HasteyBoys;
+import net.ducruetl.UHCAndScenarios.scenarios.HealthAboveHead;
 
 public class UHCAndScenarios extends JavaPlugin {
 

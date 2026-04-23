@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios.scenarios;
+package net.ducruetl.UHCAndScenarios.scenarios;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -12,7 +12,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.MoreScenarios.Scenario;
+import net.ducruetl.UHCAndScenarios.Scenario;
 
 public class CutClean implements Scenario, Listener {
     private boolean enabled = false;

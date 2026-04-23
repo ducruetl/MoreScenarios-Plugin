@@ -1,4 +1,4 @@
-package net.ducruetl.MoreScenarios.scenarios;
+package net.ducruetl.UHCAndScenarios.scenarios;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import net.ducruetl.MoreScenarios.Scenario;
+import net.ducruetl.UHCAndScenarios.Scenario;
 
 public class HasteyBabies implements Scenario {
     private boolean enabled = false;
