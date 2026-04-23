@@ -1,6 +1,6 @@
-name: MoreScenarios
+name: UHCAndScenarios
 version: 1.0
-main: net.ducruetl.MoreScenarios.MoreScenarios
+main: net.ducruetl.UHCAndScenarios.UHCAndScenarios
 author: Léo Ducruet
 
 commands:

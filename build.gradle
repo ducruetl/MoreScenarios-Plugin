@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 group = 'net.ducruetl'
 version = '1.0-SNAPSHOT'
 
-description = """MoreScenarios"""
+description = """UHCAndScenarios"""
 
 sourceCompatibility = 8
 targetCompatibility = 8

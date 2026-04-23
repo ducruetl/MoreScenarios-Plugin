@@ -62,8 +62,8 @@ public class CutClean implements Scenario, Listener {
             event.getBlock().setType(Material.AIR);
 
             event.getBlock().getWorld().dropItemNaturally(
-                    event.getBlock().getLocation(),
-                    new ItemStack(Material.IRON_INGOT)
+                event.getBlock().getLocation(),
+                new ItemStack(Material.IRON_INGOT)
             );
 
             // Exp range is [2;4]
@@ -77,8 +77,8 @@ public class CutClean implements Scenario, Listener {
             event.getBlock().setType(Material.AIR);
 
             event.getBlock().getWorld().dropItemNaturally(
-                    event.getBlock().getLocation(),
-                    new ItemStack(Material.GOLD_INGOT)
+                event.getBlock().getLocation(),
+                new ItemStack(Material.GOLD_INGOT)
             );
 
             // Exp range is [2;4]

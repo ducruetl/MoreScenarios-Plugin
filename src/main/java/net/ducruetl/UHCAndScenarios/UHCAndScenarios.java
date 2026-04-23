@@ -11,7 +11,7 @@ import net.ducruetl.MoreScenarios.scenarios.HasteyBabies;
 import net.ducruetl.MoreScenarios.scenarios.HasteyBoys;
 import net.ducruetl.MoreScenarios.scenarios.HealthAboveHead;
 
-public class MoreScenarios extends JavaPlugin {
+public class UHCAndScenarios extends JavaPlugin {
 
     private ScenarioManager scenarioManager;
     
